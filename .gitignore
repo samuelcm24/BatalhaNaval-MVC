@@ -1,0 +1,11 @@
+bin/
+out/
+target/
+*.class
+*.jar
+*.dat
+.vscode/
+.settings/
+.classpath
+.project
+Thumbs.db
