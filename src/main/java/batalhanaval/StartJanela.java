@@ -24,7 +24,7 @@ public class StartJanela extends JFrame implements ActionListener{
         pCima.setLayout(new GridLayout(2,0));
         pCima.setVisible(true);
 
-	        JLabel bemvindo = new JLabel ("Bem vindo à Batalha Naval!");
+	        JLabel bemvindo = new JLabel ("Bem vindo Ã  Batalha Naval!");
 	        bemvindo.setFont(new Font("Serif", Font.BOLD, 60));
 	        bemvindo.setForeground(new Color(25, 25, 255));
 	        
@@ -70,7 +70,7 @@ public class StartJanela extends JFrame implements ActionListener{
         	JPanel pBaixoEsq = new JPanel();
         	pBaixoEsq.setBackground(Color.LIGHT_GRAY);
             pBaixoEsq.setVisible(true);
-        	jogoRandom = new JButton ("Gerar jogo aleatório");
+        jogoRandom = new JButton ("Gerar jogo aleatÃ³rio");
         	jogoRandom.setPreferredSize(new Dimension(220, 40));
         	pBaixoEsq.add(jogoRandom);
         	
@@ -97,7 +97,7 @@ public class StartJanela extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		
 	if (nomedocara.getText().compareTo("") == 0) {
-		JOptionPane.showMessageDialog(null, "Você deve inserir um nome!");
+		JOptionPane.showMessageDialog(null, "VocÃª deve inserir um nome!");
 	}
 	else {
 			if (e.getSource() == jogoRandom)

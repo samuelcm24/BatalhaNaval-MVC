@@ -57,12 +57,12 @@ public class GameJanela extends JFrame implements ActionListener{
 	        setLocationRelativeTo(null);
 	        setDefaultCloseOperation(EXIT_ON_CLOSE);
 	        
-	        // -- DefiniÁ„o do leiaute do painel principal 
+	        // -- Defini√ß√£o do leiaute do painel principal
 	        setLayout(new GridBagLayout());
-	        // -- Objeto que mantÈm as propriedades do leiaute aplicado ao painel 
+	        // -- Objeto que mant√©m as propriedades do leiaute aplicado ao painel
 	        GridBagConstraints propriedades = new GridBagConstraints();
 	        
-	        // -- DefiniÁ„o do painel superior superior
+	        // -- Defini√ß√£o do painel superior superior
 	        JPanel pSuperiorsuperior = new JPanel();
 	        pSuperiorsuperior.setBackground(Color.GRAY);
 	        pSuperiorsuperior.setVisible(true);
@@ -86,7 +86,7 @@ public class GameJanela extends JFrame implements ActionListener{
 	        
 	        add(pSuperiorsuperior, propriedades);	        
 	        
-	        // -- DefiniÁ„o do painel superior superior esq
+	        // -- Defini√ß√£o do painel superior superior esq
 	        JPanel pSuperiorsuperioresq = new JPanel();
 	        pSuperiorsuperioresq.setLayout(new GridLayout(2,0));
 	        pSuperiorsuperioresq.setBackground(Color.BLACK);
@@ -115,7 +115,7 @@ public class GameJanela extends JFrame implements ActionListener{
 	        
 	        add(pSuperiorsuperioresq, propriedades);
 	        
-	        // -- DefiniÁ„o do painel superior esqalto
+	        // -- Defini√ß√£o do painel superior esqalto
 	        JPanel pSuperioresqalto = new JPanel();
 	        pSuperioresqalto.setBackground(Color.BLACK);
 	        pSuperioresqalto.setVisible(true);
@@ -133,7 +133,7 @@ public class GameJanela extends JFrame implements ActionListener{
 	        pSuperioresqalto.add(labelDisparos);
 	        add (pSuperioresqalto, propriedades);
 	        
-	        // -- DefiniÁ„o do painel superior esqbaixo
+	        // -- Defini√ß√£o do painel superior esqbaixo
 	        JPanel pSuperioresqbaixo = new JPanel();
 	        pSuperioresqbaixo.setBackground(Color.BLACK);
 	        pSuperioresqbaixo.setVisible(true);
@@ -149,7 +149,7 @@ public class GameJanela extends JFrame implements ActionListener{
 	        disparosimples = new JRadioButton("Disparo Unico", false);
 	        disparocascata = new JRadioButton("Disparo Cascata", false);
 	        disparoestrela = new JRadioButton("Disparo Estrela", false);
-	        disparoportaavioes = new JRadioButton("Disparo Porta Aviıes", false);
+	        disparoportaavioes = new JRadioButton("Disparo Porta Avi√µes", false);
 	        radioDica = new JRadioButton("Dica", false);
 	        radioNulo = new JRadioButton("", false);
 
@@ -179,7 +179,7 @@ public class GameJanela extends JFrame implements ActionListener{
 
 	        add(pSuperioresqbaixo, propriedades);
 	        
-	        // -- DefiniÁ„o do painel superior meio
+	        // -- Defini√ß√£o do painel superior meio
 	        JPanel pSuperiormeio = new JPanel();
 	        pSuperiormeio.setBackground(Color.GRAY);
 	        pSuperiormeio.setVisible(true);
@@ -199,7 +199,7 @@ public class GameJanela extends JFrame implements ActionListener{
 	        
 	        propriedades.gridheight = 1;
 	        
-	        // -- DefiniÁ„o do painel superior direita
+	        // -- Defini√ß√£o do painel superior direita
 	        JPanel pSuperiordir = new JPanel();
 	        pSuperiordir.setBackground(new Color(215, 0, 0));
 	        pSuperiordir.setVisible(true);
@@ -210,7 +210,7 @@ public class GameJanela extends JFrame implements ActionListener{
 	        propriedades.gridy = 1;
 	        propriedades.gridwidth = 1;
 	        propriedades.gridheight = 2;
-		    JLabel adversario = new JLabel ("Advers·rio (computador)");
+		    JLabel adversario = new JLabel ("Advers√°rio (computador)");
 		    adversario.setFont(new Font("Tahoma", Font.BOLD, 35));
 		    adversario.setForeground(Color.BLACK);
 		        
@@ -220,7 +220,7 @@ public class GameJanela extends JFrame implements ActionListener{
 	        propriedades.gridheight = 1;
 	        propriedades.gridwidth = 1; 
 	        
-	        // -- DefiniÁ„o do painel esquerdo
+	        // -- Defini√ß√£o do painel esquerdo
 	        JPanel pEsquerda = new JPanel();
 	        pEsquerda.setBackground(new Color (0, 162, 232));
 	        pEsquerda.setVisible(true);
@@ -273,7 +273,7 @@ public class GameJanela extends JFrame implements ActionListener{
 
         add(pEsquerda, propriedades);
 	        
-	        // -- DefiniÁ„o do painel divisor
+	        // -- Defini√ß√£o do painel divisor
 	        JPanel pDivisor = new JPanel();
 	        pDivisor.setBackground(Color.GRAY);
 	        pDivisor.setVisible(true);
@@ -284,7 +284,7 @@ public class GameJanela extends JFrame implements ActionListener{
 	        propriedades.gridy = 3;
 	        add(pDivisor, propriedades); 
 	        
-	        // -- DefiniÁ„o do painel direita
+	        // -- Defini√ß√£o do painel direita
 	        JPanel pDireita = new JPanel();
 	        pDireita.setBackground(new Color(215, 0, 0));
 	        pDireita.setVisible(true);
@@ -1198,9 +1198,9 @@ public class GameJanela extends JFrame implements ActionListener{
 	                     }
 	                     
 	                     if (existe)
-	                    	 JOptionPane.showMessageDialog(null, "Existe um veÌculo nesta linha ou coluna!");
+	                     JOptionPane.showMessageDialog(null, "Existe um ve√≠culo nesta linha ou coluna!");
 	                     else
-	                    	 JOptionPane.showMessageDialog(null, "N„o existe um veÌculo nesta linha ou coluna!");
+	                     JOptionPane.showMessageDialog(null, "N√£o existe um ve√≠culo nesta linha ou coluna!");
 	                     
 	                     if (dicas<=0)
 	                     {
@@ -1238,7 +1238,7 @@ public class GameJanela extends JFrame implements ActionListener{
                     } catch (InterruptedException ex) {
 
                     }
-                    JOptionPane.showMessageDialog(null, "GAME OVER! VocÍ perdeu!\nTempo total de jogo: "+ String.format("%02d", ((Cronometro)cronometro).getMinutes()) + ":" + String.format("%02d", ((Cronometro)cronometro).getSeconds()));
+                    JOptionPane.showMessageDialog(null, "GAME OVER! Voc√™ perdeu!\nTempo total de jogo: "+ String.format("%02d", ((Cronometro)cronometro).getMinutes()) + ":" + String.format("%02d", ((Cronometro)cronometro).getSeconds()));
                     
                     EndJanela end = new EndJanela (tempos, nome, btplrcpy, btpccpy, ((Cronometro)cronometro).getMinutes(), ((Cronometro)cronometro).getSeconds(), -1);
                     this.dispose();
@@ -1252,7 +1252,7 @@ public class GameJanela extends JFrame implements ActionListener{
                      } catch (InterruptedException ex) {
                          
                      }
-                     JOptionPane.showMessageDialog(null, "GAME OVER! VocÍ VENCEU!\nTempo total de jogo: "+ String.format("%02d", ((Cronometro)cronometro).getMinutes()) + ":" + String.format("%02d", ((Cronometro)cronometro).getSeconds()));
+                     JOptionPane.showMessageDialog(null, "GAME OVER! Voc√™ VENCEU!\nTempo total de jogo: "+ String.format("%02d", ((Cronometro)cronometro).getMinutes()) + ":" + String.format("%02d", ((Cronometro)cronometro).getSeconds()));
                      
                      tempos.insere(nome,((Cronometro)cronometro).getMinutes(), ((Cronometro)cronometro).getSeconds(), ((Cronometro)cronometro).getTempo(), ((Cronometro)cronometro).getData());
                      

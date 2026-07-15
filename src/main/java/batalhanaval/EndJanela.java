@@ -68,11 +68,11 @@ public class EndJanela extends JFrame implements ActionListener{
 	        JLabel tempoplayer = new JLabel ("");
 	        
 	        if (status>0)
-	        	tempoplayer.setText("Vitória | " + nome + " | " + String.format("%02d", minutos) + ":" + String.format("%02d", segundos));
+	        tempoplayer.setText("VitÃ³ria | " + nome + " | " + String.format("%02d", minutos) + ":" + String.format("%02d", segundos));
 	        else if (status<0)
 	        	tempoplayer.setText("Derrota | " + nome + " | " + String.format("%02d", minutos) + ":" + String.format("%02d", segundos));
 	        else
-	        	tempoplayer.setText("Desistência | " + nome + " | " + String.format("%02d", minutos) + ":" + String.format("%02d", segundos));
+	        tempoplayer.setText("DesistÃªncia | " + nome + " | " + String.format("%02d", minutos) + ":" + String.format("%02d", segundos));
 	        
 	        tempoplayer.setFont(new Font("Serif", Font.ITALIC + Font.BOLD, 30));
 	        tempoplayer.setForeground(Color.ORANGE);

@@ -47,11 +47,11 @@ public class SetupJanela extends JFrame implements ActionListener{
 	        setDefaultCloseOperation(EXIT_ON_CLOSE);
 	        this.nomedocara = nome;
 	        
-	        // -- DefiniÁ„o do leiaute do painel principal
+	        // -- Defini√ß√£o do leiaute do painel principal
 	        setLayout(new GridBagLayout());
 	        GridBagConstraints propriedades = new GridBagConstraints();
 	        
-	        // -- DefiniÁ„o do painel superior superior
+	        // -- Defini√ß√£o do painel superior superior
 	        JPanel pSuperiorsuperior = new JPanel();
 	        pSuperiorsuperior.setBackground(Color.BLACK);
 	        pSuperiorsuperior.setVisible(true);
@@ -70,7 +70,7 @@ public class SetupJanela extends JFrame implements ActionListener{
 	        
 	        add(pSuperiorsuperior, propriedades);	        
 
-	        // -- DefiniÁ„o do painel superior esq
+	        // -- Defini√ß√£o do painel superior esq
 	        JPanel pSuperioresq = new JPanel();
 	        pSuperioresq.setBackground(new Color(5, 30, 150));
 	        pSuperioresq.setVisible(true);
@@ -87,7 +87,7 @@ public class SetupJanela extends JFrame implements ActionListener{
 		    pSuperioresq.add(playername);
 	        add(pSuperioresq, propriedades);
 	        
-	        // -- DefiniÁ„o do painel superior meio-direita
+	        // -- Defini√ß√£o do painel superior meio-direita
 	        JPanel pSuperiormeio = new JPanel();
 	        pSuperiormeio.setBackground(new Color(5, 30, 150));
 	        pSuperiormeio.setVisible(true);
@@ -97,7 +97,7 @@ public class SetupJanela extends JFrame implements ActionListener{
 	        propriedades.gridx = 1; 
 	        propriedades.gridy = 1;
 	        propriedades.gridwidth = 2; 
-		    JLabel escolha = new JLabel ("Escolha a posiÁ„o dos seus veÌculos:");
+		    JLabel escolha = new JLabel ("Escolha a posi√ß√£o dos seus ve√≠culos:");
 		    escolha.setFont(new Font("Serif", Font.BOLD, 30));
 		    escolha.setForeground(Color.WHITE);
 		        
@@ -107,7 +107,7 @@ public class SetupJanela extends JFrame implements ActionListener{
 	        
 	        propriedades.gridwidth = 1;
 	        
-	        // -- DefiniÁ„o do painel dos botoes dos veiculos (esquerda cima)
+	        // -- Defini√ß√£o do painel dos botoes dos veiculos (esquerda cima)
 	        JPanel pEsquerdacima = new JPanel();
 	        pEsquerdacima.setBackground(new Color(5, 30, 150));
 	        pEsquerdacima.setVisible(true);
@@ -119,9 +119,9 @@ public class SetupJanela extends JFrame implements ActionListener{
 
 	        ButtonGroup veiculos = new ButtonGroup();
 	        
-	        Rporta = new JRadioButton("Porta-avi„o", false);
+	        Rporta = new JRadioButton("Porta-avi√£o", false);
 	        Rescolta = new JRadioButton("Navio de Escolta", false);
-	        Rcaca = new JRadioButton("CaÁa", false);
+	        Rcaca = new JRadioButton("Ca√ßa", false);
 	        Rsub = new JRadioButton("Submarino", false);
 	        
 	        Rnulo = new JRadioButton("", false);
@@ -150,7 +150,7 @@ public class SetupJanela extends JFrame implements ActionListener{
 	        
 	        add(pEsquerdacima, propriedades);
 	        
-	        // -- DefiniÁ„o do painel dos botoes de veiculo (esquerda meio)
+	        // -- Defini√ß√£o do painel dos botoes de veiculo (esquerda meio)
 	        JPanel pEsquerdameio = new JPanel();
 	        pEsquerdameio.setBackground(new Color(5, 30, 150));
 	        pEsquerdameio.setVisible(true);
@@ -169,7 +169,7 @@ public class SetupJanela extends JFrame implements ActionListener{
 	        add(pEsquerdameio, propriedades);
 
 	        
-	        // -- DefiniÁ„o do painel dos botao de start (esquerda baixo)
+	        // -- Defini√ß√£o do painel dos botao de start (esquerda baixo)
 	        JPanel pEsquerdabaixo = new JPanel();
 	        pEsquerdabaixo.setBackground(new Color(5, 30, 150));
 	        pEsquerdabaixo.setVisible(true);
@@ -188,7 +188,7 @@ public class SetupJanela extends JFrame implements ActionListener{
 
 	        add(pEsquerdabaixo, propriedades);
 	        
-	        // -- DefiniÁ„o do painel divisor 
+	        // -- Defini√ß√£o do painel divisor
 	        JPanel pDivisor = new JPanel();
 	        pDivisor.setBackground(new Color (0, 162, 232));
 	        pDivisor.setVisible(true);
@@ -247,7 +247,7 @@ public class SetupJanela extends JFrame implements ActionListener{
 		 }// -- FECHAMENTO DO IF (CASO FOR TABULEIRO RANDOM)
 		 else
 		 {
-			 	// -- GERA«√O DOS BOTOES DO PLAYER EM OFF - RANDOM (OPTADO)
+			 // -- GERA√á√ÉO DOS BOTOES DO PLAYER EM OFF - RANDOM (OPTADO)
 		        for (int i=0; i<10; i++) {
 		        	for (int j=0; j<10; j++) {
 		        		btplr[i][j] = new GameButton ("", "vazio", i, j);
@@ -351,7 +351,7 @@ public class SetupJanela extends JFrame implements ActionListener{
 			        
 		        }
 		        
-		        // -- GERA«√O DOS BOTOES DO PC EM OFF - SEMPRE RANDOM 
+		        // -- GERA√á√ÉO DOS BOTOES DO PC EM OFF - SEMPRE RANDOM
 		        for (int i=0; i<10; i++) {
 		        	for (int j=0; j<10; j++) {
 		        		btpc[i][j] = new GameButton ("", "vazio", i, j);
@@ -475,7 +475,7 @@ public class SetupJanela extends JFrame implements ActionListener{
 				        Rporta.setEnabled(false);
 					 }
 					 else
-						JOptionPane.showMessageDialog(null, "Esta posiÁao n„o È v·lida para o Porta-avi„o (4 cÈlulas).");
+						JOptionPane.showMessageDialog(null, "Esta posi√ßao n√£o √© v√°lida para o Porta-avi√£o (4 c√©lulas).");
 				 }
 				 
 				 
@@ -503,7 +503,7 @@ public class SetupJanela extends JFrame implements ActionListener{
 				        Rcaca.setEnabled(false);
 					 }
 					 else
-						 JOptionPane.showMessageDialog(null, "Esta posiÁao n„o È v·lida para o CaÁa (2 cÈlulas).");
+						 JOptionPane.showMessageDialog(null, "Esta posi√ßao n√£o √© v√°lida para o Ca√ßa (2 c√©lulas).");
 				 }
 				 
 				 if (Rsub.isSelected())
@@ -530,7 +530,7 @@ public class SetupJanela extends JFrame implements ActionListener{
 				        Rsub.setEnabled(false);
 					 }
 				        else
-							 JOptionPane.showMessageDialog(null, "Esta posiÁao n„o È v·lida para o Submarino (2 cÈlulas).");
+							 JOptionPane.showMessageDialog(null, "Esta posi√ßao n√£o √© v√°lida para o Submarino (2 c√©lulas).");
 				 }
 				 
 				 if (Rescolta.isSelected())
@@ -563,12 +563,12 @@ public class SetupJanela extends JFrame implements ActionListener{
 				        Rescolta.setEnabled(false);
 					 }
 					 else
-						 JOptionPane.showMessageDialog(null, "Esta posiÁao n„o È v·lida para o Navio de escolta (3 cÈlulas).");
+						 JOptionPane.showMessageDialog(null, "Esta posi√ßao n√£o √© v√°lida para o Navio de escolta (3 c√©lulas).");
 				 }
 			 }
 			 else
 			 {
-				 JOptionPane.showMessageDialog(null, "Escolha um veÌculo para posicionar!");
+				 JOptionPane.showMessageDialog(null, "Escolha um ve√≠culo para posicionar!");
 			 }
 		 }
 		 
@@ -577,7 +577,7 @@ public class SetupJanela extends JFrame implements ActionListener{
 		 {
 	    	if (Rporta.isEnabled() || Rcaca.isEnabled() || Rsub.isEnabled() || Rescolta.isEnabled()) 
 	    	{
-	    		JOptionPane.showMessageDialog(null, "VocÍ deve utilizar todos veÌculos!");
+			JOptionPane.showMessageDialog(null, "Voc√™ deve utilizar todos ve√≠culos!");
 	    	}
 	    	else 
 	    	{
