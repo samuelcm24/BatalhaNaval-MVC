@@ -131,6 +131,23 @@ class JogoControllerTest {
     }
 
     @Test
+    void deveExporConsultasDeLeituraParaView() {
+        JogoController controller = partidaManualIniciada();
+
+        assertEquals("Ana", controller.getNomeJogador());
+        assertEquals(StatusPartida.EM_ANDAMENTO, controller.getStatusPartida());
+        assertEquals(3, controller.getDicasRestantes());
+        assertEquals(0, controller.getCargaPortaAvioes());
+        assertEquals(4, controller.getEmbarcacoesJogador().size());
+        assertTrue(controller.hasEmbarcacaoJogador(0, 0));
+        assertFalse(controller.hasEmbarcacaoJogador(9, 9));
+        assertEquals(Optional.of("Porta-aviões"), controller.getNomeEmbarcacaoJogador(0, 0));
+        assertEquals(Optional.empty(), controller.getNomeEmbarcacaoJogador(9, 9));
+        assertEquals(StatusCelula.EMBARCACAO, controller.getStatusCelulaJogador(0, 0));
+        assertEquals(StatusCelula.VAZIA, controller.getStatusCelulaComputador(9, 9));
+    }
+
+    @Test
     void deveRegistrarVitoriaUmaUnicaVez() throws IOException {
         JogoController controller = partidaManualIniciadaComBotDeAgua();
         afundarComputador(controller);
