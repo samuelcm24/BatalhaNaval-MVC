@@ -6,7 +6,7 @@
 
     <groupId>br.com.batalhanaval</groupId>
     <artifactId>batalha-naval</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>Batalha Naval</name>
 
     <properties>
@@ -31,6 +31,18 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.3</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>batalhanaval.BatalhaNaval</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
             </plugin>
         </plugins>
     </build>
