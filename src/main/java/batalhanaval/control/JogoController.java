@@ -16,6 +16,7 @@ import batalhanaval.model.Orientacao;
 import batalhanaval.model.Partida;
 import batalhanaval.model.PortaAvioes;
 import batalhanaval.model.ResultadoDisparo;
+import batalhanaval.model.StatusCelula;
 import batalhanaval.model.StatusPartida;
 import batalhanaval.model.StatusTiro;
 import batalhanaval.model.Submarino;
@@ -129,6 +130,56 @@ public class JogoController {
     public boolean podeUsarDisparo(TipoDisparo tipo) {
         validarPartidaExistente();
         return partidaAtual.podeUsarDisparo(tipo);
+    }
+
+    public StatusCelula getStatusCelulaJogador(int linha, int coluna) {
+        validarPartidaExistente();
+        return partidaAtual.getTabuleiroJogador().getStatus(new Coordenada(linha, coluna));
+    }
+
+    public StatusCelula getStatusCelulaComputador(int linha, int coluna) {
+        validarPartidaExistente();
+        return partidaAtual.getTabuleiroComputador().getStatus(new Coordenada(linha, coluna));
+    }
+
+    public boolean hasEmbarcacaoJogador(int linha, int coluna) {
+        validarPartidaExistente();
+        return partidaAtual.getTabuleiroJogador().hasEmbarcacao(new Coordenada(linha, coluna));
+    }
+
+    public boolean hasEmbarcacaoComputador(int linha, int coluna) {
+        validarPartidaExistente();
+        return partidaAtual.getTabuleiroComputador().hasEmbarcacao(new Coordenada(linha, coluna));
+    }
+
+    public Optional<String> getNomeEmbarcacaoJogador(int linha, int coluna) {
+        validarPartidaExistente();
+        return partidaAtual.getTabuleiroJogador().getNomeEmbarcacao(new Coordenada(linha, coluna));
+    }
+
+    public String getNomeJogador() {
+        validarPartidaExistente();
+        return partidaAtual.getNomeJogador();
+    }
+
+    public StatusPartida getStatusPartida() {
+        validarPartidaExistente();
+        return partidaAtual.getStatus();
+    }
+
+    public int getDicasRestantes() {
+        validarPartidaExistente();
+        return partidaAtual.getDicasRestantes();
+    }
+
+    public int getCargaPortaAvioes() {
+        validarPartidaExistente();
+        return partidaAtual.getCargaPortaAvioes();
+    }
+
+    public List<Embarcacao> getEmbarcacoesJogador() {
+        validarPartidaExistente();
+        return partidaAtual.getTabuleiroJogador().getEmbarcacoes();
     }
 
     public boolean verificarCondicaoFim() {
