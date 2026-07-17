@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
 
@@ -29,6 +30,10 @@ public class Tabuleiro {
 
     public boolean hasEmbarcacao(Coordenada coordenada) {
         return celulaEm(coordenada).hasEmbarcacao();
+    }
+
+    public Optional<String> getNomeEmbarcacao(Coordenada coordenada) {
+        return celulaEm(coordenada).getNomeEmbarcacao();
     }
 
     public List<Embarcacao> getEmbarcacoes() {

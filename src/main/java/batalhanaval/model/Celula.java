@@ -1,5 +1,7 @@
 package batalhanaval.model;
 
+import java.util.Optional;
+
 public final class Celula {
     private StatusCelula status;
     private Embarcacao embarcacao;
@@ -15,6 +17,13 @@ public final class Celula {
 
     public boolean hasEmbarcacao() {
         return embarcacao != null;
+    }
+
+    public Optional<String> getNomeEmbarcacao() {
+        if (embarcacao == null) {
+            return Optional.empty();
+        }
+        return Optional.of(embarcacao.getNome());
     }
 
     void posicionarEmbarcacao(Embarcacao embarcacao) {
